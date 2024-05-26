@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: brown;
+    /* overflow: hidden; */
+}
+
+li{
+    list-style: none;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(_ec75ba27-be3a-493d-af2a-abed23793dc7.jpeg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    
+    /* object-fit: cover; */
+}
+
+.chat-window {
+    width: 400px; /* Adjust as needed */
+    background-color: #fffefe;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #0c0c0c;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.messages {
+    /* height: 20%; */
+    padding: 20px;
+    overflow-y:scroll;
+   height: 300px; /* Adjust as needed */ 
+        /* scroll-behavior: smooth; Enable smooth scrolling */
+        /* overflow: ; */
+    
+}
+
+.typing {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.input-box {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.input-box input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.left-side {
+    /* background-size: 100%; */
+    text-align: left; /* Ensure text is left-aligned */
+    /* align-self: flex-start; */
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.left-side-btn {
+    /* background-size: 100%; */
+    text-align: left; /* Ensure text is left-aligned */
+    /* align-self: flex-start; */
+    /* background-color:  rgb(255, 0, 0); */
+    padding: 1px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    max-width: 60%;
+    /* word-wrap: break-word; */
+    /* border-style: none; */
+}
+
+
+
+.right-side {
+    text-align: right;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    align-self: flex-end;
+}
+
+.left-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+}
+
+@media (max-width: 500px) {
+    .chat-window {
+        width: 90%;
+    }
+}
